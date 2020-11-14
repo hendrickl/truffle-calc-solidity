@@ -3,7 +3,7 @@ import { Heading, Text, HStack, VStack, Button, Input } from "@chakra-ui/core";
 // https://docs.ethers.io/v5/
 import { ethers } from "ethers";
 import { isConnected2MetaMask, connect2Contract } from "./utils/eth-utils";
-import { calculator_address, calculator_abi } from "./contracts/Calculator.js";
+import { calculator_address, calculator_abi } from "./Contracts/Calculator.js";
 
 const web3Reducer = (state, action) => {
   switch (action.type) {
@@ -176,8 +176,8 @@ function App() {
   return (
     <>
       <VStack>
-        <Button onClick={async () => handleOnClickAdd(11, 13)}>Add</Button>
-        <Button onClick={async () => handleOnClickSub(1, 2)}>Sub</Button>
+        <Button onClick={async () => handleOnClickAdd(11, 13)}>ADD</Button>
+        <Button onClick={async () => handleOnClickSub(1, 2)}>SUB</Button>
       </VStack>
     </>
   );
