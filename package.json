@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "npx truffle compile && mocha --exit --recursive",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,5 +43,11 @@
   "main": "index.js",
   "repository": "https://github.com/hendrickl/web3-calc.git",
   "author": "Hendrick Lincertin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.6",
+    "@openzeppelin/test-helpers": "^0.5.9",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
 }
