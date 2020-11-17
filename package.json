@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "npx truffle compile && mocha --exit --recursive",
+    "test": "npx truffle compile && mocha --exit --recursive --timeout 10000",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
